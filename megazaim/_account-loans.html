@@ -1,0 +1,85 @@
+
+<!--extends templates/_page.pug-->
+<!---->
+<!--include mixins/loan-slider-->
+<!---->
+<!--append vars-->
+<!--    - iflogin = false-->
+<!--    - typical = true-->
+<!--    - typicalPageClass = 'main-content_typical'-->
+<!--    - pageStyleLink = 'css/typical/account-loans.css'-->
+<!--    - thisPage = 'Займы'-->
+<!---->
+<!---->
+<!--mixin loanVariant(nameLabel, idElem, svgId, ifDisabled)-->
+<!---->
+<!--    .loan-box__variant-->
+<!--        if(ifDisabled)-->
+<!--            input(id=idElem type="checkbox" class="loan-box__input" disabled)-->
+<!--        else-->
+<!--            input(id=idElem type="checkbox" class="loan-box__input")-->
+<!--        label.loan-box__label(for=idElem)-->
+<!--            svg(class='svg-' + svgId  + '-dims loan-box__icon')-->
+<!--                use(xlink:href='#' + svgId + '' class='loan-box__icon-inner' xmlns:xlink='http://www.w3.org/1999/xlink')-->
+<!--            p.loan-box__title= nameLabel-->
+<!---->
+<!--block content-->
+<!--    .container-->
+<!--        .row-->
+<!--            .col-md-4.hidden-sm.hidden-xs-->
+<!--                +page-navigation([-->
+<!--                    {text: "Займы", img: "/", isSelected: true},-->
+<!--                    {text: "Личные данные", img: "/", isSelected: false}-->
+<!--                ])-->
+<!--            .col-md-8.col-sm-12-->
+<!--                .content__account-->
+<!---->
+<!--                    h1.h1-typical.h1-account Микрозаймы-->
+<!---->
+<!--                    +loan-slider()-->
+<!---->
+<!--                    .loan-section-->
+<!--                        p.title__account Тип займа:-->
+<!--                        .loan-box-->
+<!--                            +loanVariant('Наличными','loan_variant_03','ico_calc_cash')-->
+<!--                            +loanVariant('На счет','loan_variant_01','ico_calc_banka')-->
+<!--                            +loanVariant('Переводом','loan_variant_04','ico_calc_transfer')-->
+<!--                            +loanVariant('На кошелек','loan_variant_05','ico_calc_wallet')-->
+<!--                            +loanVariant('На карту','loan_variant_02','ico_calc_card')-->
+<!---->
+<!--                    .region-section-->
+<!--                        p.title__account Место получения:-->
+<!--                        .region-box-->
+<!--                            .select-box-->
+<!--                                select.select__inner-->
+<!--                                    - for (var i=1; i<=10; i++)-->
+<!--                                    option=i + ". Пункт"-->
+<!--                                .select__content-->
+<!--                            .select-box-->
+<!--                                select.select__inner-->
+<!--                                    - for (var i=1; i<=10; i++)-->
+<!--                                    option=i + ". Пункт"-->
+<!--                                .select__content-->
+<!--                    .line-->
+<!--                        .line__dot-->
+<!---->
+<!--                    .table-section-->
+<!--                        p.title__account Найдено 4 предложения:-->
+<!--                        - for (var i=1; i<=4; i++)-->
+<!--                        .block-loan_list_el.approved-->
+<!--                            figure.block-loan_element-->
+<!--                                img(alt="test" src="../img/table-logo-test.png")-->
+<!--                            a.btn.btn-light(target="_blank" href="#") Получить заем-->
+<!--                            ul-->
+<!--                                li-->
+<!--                                    span.loan__info Сумма займа:-->
+<!--                                    span.loan__value.loan__value_rub 10 000-->
+<!--                                li-->
+<!--                                    span.loan__info Срок займа:-->
+<!--                                    span.loan__value.loan__value_day 60-->
+<!--                                li-->
+<!--                                    span.loan__info Процентная ставка:-->
+<!--                                    span.loan__value.loan__value_ppd 1.5-->
+<!--                                li-->
+<!--                                    span.loan__info Вероятность выдачи:-->
+<!--                                    span.loan__value.loan__value_perc 89-->

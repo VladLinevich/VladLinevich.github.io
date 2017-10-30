@@ -1,0 +1,42 @@
+.banners {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 0 0 50px 0;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .banner:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banners {
+    display: block;
+  }
+  .banners .banner {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .banners .banner:last-child {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhbm5lci1ibG9jay5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxxQkFBYztFQUFkLHNCQUFjO0VBQWQscUJBQWM7RUFBZCxjQUFjO0VBQ2Qsc0NBQThCO01BQTlCLDBCQUE4QjtVQUE5Qiw4QkFBOEI7RUFDOUIsbUJBQW1CO0NBQ3BCOztBQUVEO0VBQ0UsaUJBQWlCO0NBQ2xCOztBQUVEO0VBQ0UsWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixhQUFhO0NBQ2Q7O0FBRUQ7RUFDRTtJQUNFLGNBQWM7R0FDZjtDQUNGOztBQUVEO0VBQ0U7SUFDRSxlQUFlO0dBQ2hCO0VBQ0Q7SUFDRSxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLG9CQUFvQjtHQUNyQjtFQUNEO0lBQ0UsY0FBYztHQUNmO0NBQ0YiLCJmaWxlIjoiYmxvY2tzL2Jhbm5lci1ibG9jay9iYW5uZXItYmxvY2suY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJhbm5lcnMge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgbWFyZ2luOiAwIDAgNTBweCAwO1xufVxuXG4uYmFubmVyIHtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn1cblxuLmJhbm5lciBpbWcge1xuICB3aWR0aDogMTAwJTtcbiAgbWF4LXdpZHRoOiAzMDBweDtcbiAgaGVpZ2h0OiBhdXRvO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA5OTFweCkge1xuICAuYmFubmVyOmxhc3QtY2hpbGQge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgLmJhbm5lcnMge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICB9XG4gIC5iYW5uZXJzIC5iYW5uZXIge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICB9XG4gIC5iYW5uZXJzIC5iYW5uZXI6bGFzdC1jaGlsZCB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxufVxuIl19 */

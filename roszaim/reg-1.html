@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0c70bd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+    <title>Roszaim</title>
+    <link rel="stylesheet" href="libs/nouislider/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/blocks/calculator.css">
+    <link rel="stylesheet" href="css/reg.css">
+  </head>
+  <body class="false loader ">
+    <div class="shadow-toggle menu-toggle"></div>
+    <header class="header">
+      <div class="loader__body loader__body_main">
+        <div class="loader__inner">
+          <div class="loader__inner-pic"><img src="img/svg/loader.svg"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-top">
+          <div class="logo__box"><a class="logo__link" href="/"><img class="logo__img" src="img/svg/logo.svg" title="Hitsi - простые займы" alt="Hitsi - простые займы"></a></div>
+          <div class="login-area-box">
+            <div class="login-area"><a class="login-area login-area__login hidden-xs"></a>
+              <div class="fly"><span class="button button_dark button_link button_small login-form-btn login-form_toggle">Войти</span></div>
+              <div class="login-area__shadow login-form_toggle"></div>
+              <div class="login-area__inner">
+                <form class="login-area__form">
+                  <div class="login-area__form-title">Вход в личный кабинет</div>
+                  <!--label.login-area__form-label Телефон-->
+                  <div class="input-wrap has-error">
+                    <input class="flex-form__input default-input" type="text" required="required">
+                    <label class="default-label">Телефон</label>
+                    <div class="error-block">Номер телефона не соответствует ни одному аккаунту. Зарегистрируйтесь.</div>
+                  </div>
+                  <!--label.login-area__form-label Пароль-->
+                  <div class="input-wrap">
+                    <input class="flex-form__input default-input" type="text" required="required">
+                    <label class="default-label">Электронная почта</label>
+                  </div>
+                  <button class="login-area__form-submit button button_dark">Войти</button>
+                  <div class="login-area__form-footer"><a class="login-area__form-footer-btn login-area__form-footer-btn_forgot" href="#">Забыли пароль?</a><a class="login-area__form-footer-btn login-area__form-footer-btn_reg" href="#">Регистрация</a></div>
+                </form>
+              </div>
+              <svg class="login-area_toggle menu-toggle hidden-md hidden-lg">
+                <use xlink:href="#menu" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu__top-listener">
+        <div class="menu-box" id="main_menu">
+          <div class="fly flying">
+            <div class="menu-box__login"><span class="button button_dark button_small menu-box__btn mobile-menu_close button_link">Вход</span><a class="button button_dark button_large menu-box__btn button_link" href="#">Регистрация</a>
+            </div>
+          </div>
+          <div class="menu-box__inner">
+            <ul class="menu__list">
+              <li class="menu__item"><span class="menu__link">О компании</span>
+                <ul class="menu__list_sub">
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./about">О нас</a></li>
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./contacts.html">Контакты</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><span class="menu__link">Получить деньги</span>
+                <ul class="menu__list_sub">
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./how-it-work.html">Как это работает</a></li>
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./how-to-loan.html">Как получить заем</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><span class="menu__link">Помощь</span>
+                <ul class="menu__list_sub">
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./faq.html">Вопросы и ответы</a></li>
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./feedback.html">Обратная связь</a></li>
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./documents.html">Документы</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><span class="menu__link">Статьи</span>
+                <ul class="menu__list_sub">
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./document.html">Заем на банковский счет</a></li>
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./document.html">Безопасность онлайн-займов</a></li>
+                  <li class="menu__item_sub"><a class="menu__link_sub" href="./document.html">Исправление кредитной истории</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="main_content">
+      <div class="container">
+        <div class="shadow-box calc-box_reg">
+          <div class="calc-box__table">
+            <div class="calc-box__calc-result"><span class="calc-box__calc-text">Мне нужно:</span><span class="calc-box__calc-value">5 000</span><span class="calc-box__calc-cash">рублей</span></div>
+            <div class="slider-box slider_amount">
+              <div class="slider-box__slider" id="slider_amount"></div>
+              <div class="slider-box__slider_desc-range">
+                <div class="slider-box__slider_min">1 000</div>
+                <div class="slider-box__slider_max">80 000</div>
+              </div>
+            </div>
+          </div>
+          <div class="calc-box__table">
+            <div class="calc-box__calc-result">
+              <div class="calc-box__calc-text">На срок:</div>
+              <div class="calc-box__calc-value"><span class="calc-box__calc-value_date">1-6</span><span class="calc-box__calc-value_term">месяцев</span></div>
+            </div>
+            <div class="slider-box slider_range">
+              <div class="slider-box__slider" id="slider_range"></div>
+              <div class="slider-box__slider_desc-range">
+                <div class="slider-box__slider_min">1-14 дней</div>
+                <div class="slider-box__slider_max">12 месяцев</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-box">
+          <div class="shadow-box__header">
+            <div class="shadow-box__header-inner shadow-box__header-inner_spacebetween">
+              <div class="shadow-box__title">Контактные данные</div>
+              <div class="shadow-box__pages">шаг 1 из 2</div>
+            </div>
+          </div>
+          <div class="shadow-box__body shadow-box__body_center">
+            <div class="flex-form__row">
+              <div class="flex-form__col">
+                <div class="flex-form__item">
+                  <div class="flex-form__label required">Фамилия</div>
+                  <div class="input-wrap">
+                    <input class="flex-form__input default-input" placeholder="Фамилия">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-form__row">
+              <div class="flex-form__col">
+                <div class="flex-form__item">
+                  <div class="flex-form__label required">Имя</div>
+                  <div class="input-wrap">
+                    <input class="flex-form__input default-input" placeholder="Имя">
+                  </div>
+                </div>
+              </div>
+              <div class="flex-form__col">
+                <div class="flex-form__item">
+                  <div class="flex-form__label required">Отчество</div>
+                  <div class="input-wrap">
+                    <input class="flex-form__input default-input" placeholder="Отчество">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-form__row">
+              <div class="flex-form__col">
+                <div class="flex-form__item">
+                  <div class="flex-form__label required">Телефон</div>
+                  <div class="input-wrap">
+                    <input class="flex-form__input default-input" placeholder="Телефон">
+                  </div>
+                </div>
+              </div>
+              <div class="flex-form__col">
+                <div class="flex-form__item">
+                  <div class="flex-form__label required">Электронная почта</div>
+                  <div class="input-wrap">
+                    <input class="flex-form__input default-input" placeholder="Электронная почта">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-form__row">
+              <div class="flex-form__col">
+                <div class="flex-form__item">
+                  <div class="flex-form__label required">Дата рождения</div>
+                  <div class="input-wrap">
+                    <input class="flex-form__input default-input" placeholder="Дата рождения">
+                  </div>
+                </div>
+              </div>
+              <div class="flex-form__col">
+                <div class="flex-form__item">
+                  <div class="flex-form__label required">Город получения займа</div>
+                  <div class="input-wrap">
+                    <input class="flex-form__input default-input" placeholder="Город получения займа">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="sprite-box"><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 77 97" id="1-how" xmlns="http://www.w3.org/2000/svg"><path class="ast0" d="M69.1 3C71.8 3 74 5.2 74 7.9v81.3c0 2.7-2.2 4.9-4.9 4.9H7.9C5.2 94 3 91.8 3 89.1V7.9C3 5.2 5.2 3 7.9 3h61.2m0-3H7.9C3.5 0 0 3.5 0 7.9v81.3C0 93.5 3.5 97 7.9 97h61.3c4.3 0 7.9-3.5 7.9-7.9V7.9C77 3.5 73.5 0 69.1 0z"/><path class="ast0" d="M60.5 11v3h5v71h-54V14h5v-3h-8v77h60V11h-8z"/><path class="ast0" d="M58 3v10.7c0 1.3-1 2.3-2.3 2.3H21.3C20 16 19 15 19 13.7V3h-3v10.7c0 2.9 2.4 5.3 5.3 5.3h34.4c2.9 0 5.3-2.4 5.3-5.3V3h-3zM37 28v20H19V28h18m3-3H16v26h24V25zM16 57h46v3H16zm0 6h40v3H16zm0 6h43v3H16zm0 6h35v3H16z"/></symbol><symbol viewBox="0 0 97 97" id="2-how" xmlns="http://www.w3.org/2000/svg"><path class="bst0" d="M35.3 3.2c2.4 5.6 7.6 9.3 13.3 9.3 5.9 0 11.2-3.7 13.3-9.2 3.2 1 6.4 2.3 9.4 3.9C69 12.4 70.2 19 74.2 23c2.6 2.7 6.3 4.2 10.1 4.2 2 0 3.9-.4 5.7-1.2 1.6 2.9 2.9 6.1 3.8 9.3-5.5 2.1-9.3 7.4-9.3 13.3 0 5.7 3.8 11.3 9.2 13.3-.9 3.2-2.2 6.3-3.9 9.3-1.8-.8-3.7-1.2-5.7-1.2-3.8 0-7.4 1.5-10.1 4.1-4.1 4.1-5.3 10.2-3 15.7v.2c-3 1.6-6.1 2.9-9.3 3.8l-.2-.4c-2.2-5.2-7.5-8.8-13.2-8.8-5.9 0-11.2 3.7-13.3 9.2-3.3-1-6.4-2.3-9.4-3.9C28 84.6 26.8 78 22.8 74c-2.6-2.7-6.3-4.2-10.1-4.2-2 0-3.9.4-5.7 1.2-.8-1.4-1.5-2.9-2.1-4.4-.7-1.6-1.2-3.2-1.7-4.9 5.5-2.1 9.3-7.4 9.3-13.3 0-5.7-3.8-11.3-9.2-13.3 1-3.2 2.3-6.3 3.9-9.3 1.8.8 3.7 1.2 5.7 1.2 3.8 0 7.4-1.5 10-4.1C27 18.8 28.3 12.5 26 7.3V7c3-1.6 6.1-2.9 9.3-3.8m.2-3.2c-.3 0-.5 0-.8.1-3.7 1-7.2 2.5-10.6 4.4-1.3.7-1.6 2.7-1 4 1.8 4 .9 8.9-2.4 12.2-2.1 2.1-5 3.2-7.8 3.2-1.6 0-3.2-.3-4.7-1-.4-.2-.8-.3-1.2-.3-1 0-1.9.5-2.4 1.4-1.9 3.3-3.3 6.8-4.4 10.4-.4 1.4.3 2.9 1.7 3.4 4.2 1.5 7.4 6 7.4 10.5 0 4.7-3 8.9-7.5 10.5-1.4.5-2.2 2-1.8 3.4.6 1.9 1.3 3.8 2 5.6.7 1.7 1.5 3.4 2.4 5 .5.9 1.5 1.4 2.5 1.4.4 0 .8-.1 1.2-.3 1.5-.7 3.1-1 4.7-1 2.9 0 5.8 1.1 7.9 3.3 3.2 3.2 4.1 8.6 2.2 12.6-.6 1.3-.1 2.9 1.2 3.6 3.3 1.9 6.9 3.4 10.6 4.4.3.1.5.1.8.1 1.2 0 2.2-.7 2.6-1.9 1.6-4.4 5.8-7.4 10.5-7.4 4.4 0 8.5 2.8 10.2 6.9l.2.6c.4 1.1 1.5 1.9 2.7 1.9.3 0 .5 0 .8-.1 3.7-1 7.2-2.5 10.6-4.4 1.2-.7 1.6-2.6 1-3.9-1.8-4.3-.8-9.1 2.4-12.3 2.1-2.1 5-3.2 7.9-3.2 1.6 0 3.2.3 4.7 1 .4.2.8.3 1.2.3 1 0 1.9-.5 2.4-1.4 1.9-3.3 3.3-6.8 4.4-10.4.4-1.4-.4-2.9-1.8-3.4-4.2-1.5-7.4-6-7.4-10.5 0-4.7 3-8.9 7.5-10.5 1.4-.5 2.2-2 1.8-3.4-1-3.6-2.5-7.1-4.3-10.5-.5-.9-1.5-1.4-2.5-1.4-.4 0-.8.1-1.2.3-1.5.7-3.1 1-4.7 1-2.9 0-5.8-1.1-7.9-3.3-3.1-3.2-4.1-8.6-2.2-12.6.6-1.3.1-2.9-1.2-3.6-3.3-1.9-6.9-3.4-10.6-4.4-.3-.1-.5-.1-.8-.1-1.2 0-2.2.7-2.6 1.9-1.6 4.4-5.8 7.4-10.5 7.4-4.5 0-8.6-3-10.5-7.5-.5-1.4-1.5-2-2.7-2z"/><path class="bst0" d="M63 39.9c0-.6-.4-1.2-1-1.4-4.5-1.6-8.8-3.8-12.8-6.9-.5-.4-1.3-.4-1.8 0-4 3.1-8.3 5.3-12.8 6.9-.6.2-1 .8-1 1.4 0 8.6 1.8 14.3 4.5 18.3s6.3 6.2 9.4 8.2c.2.2.5.2.8.2s.6-.1.8-.2c3.1-2 6.7-4.2 9.4-8.2 2.7-3.9 4.5-9.6 4.5-18.3zm-14.7-5.3C52 37.3 56 39.4 60 40.9c-.1 7.6-1.7 12.4-4 15.6-2.1 3.1-4.9 5-7.7 6.9-2.8-1.8-5.6-3.7-7.7-6.9-2.2-3.3-3.8-8-4-15.6 4.1-1.5 8-3.6 11.7-6.3z"/></symbol><symbol viewBox="0 0 97 97" id="3-cond" xmlns="http://www.w3.org/2000/svg"><path class="cst0" d="M76.4 3C77.8 3 79 4.2 79 5.6v85.8c0 1.4-1.2 2.6-2.6 2.6H20.6c-1.4 0-2.6-1.2-2.6-2.6V5.6C18 4.2 19.2 3 20.6 3h55.8m0-3H20.6C17.5 0 15 2.5 15 5.6v85.8c0 3.1 2.5 5.6 5.6 5.6h55.8c3.1 0 5.6-2.5 5.6-5.6V5.6C82 2.5 79.5 0 76.4 0z"/><path class="cst0" d="M69.4 9c1.4 0 2.6 1.2 2.6 2.6v61.8c0 1.4-1.2 2.6-2.6 2.6H27.6c-1.4 0-2.6-1.2-2.6-2.6V11.6c0-1.4 1.2-2.6 2.6-2.6h41.8m0-3H27.6C24.5 6 22 8.5 22 11.6v61.8c0 3.1 2.5 5.6 5.6 5.6h41.8c3.1 0 5.6-2.5 5.6-5.6V11.6C75 8.5 72.5 6 69.4 6zM48.5 83.5c1.6 0 2.8 1.3 2.8 2.8 0 1.6-1.3 2.8-2.8 2.8s-2.8-1.3-2.8-2.8 1.2-2.8 2.8-2.8m0-3c-3.2 0-5.8 2.6-5.8 5.8 0 3.2 2.6 5.8 5.8 5.8s5.8-2.6 5.8-5.8-2.6-5.8-5.8-5.8z"/></symbol><symbol viewBox="0 0 113 97" id="3-how" xmlns="http://www.w3.org/2000/svg"><path class="dst0" d="M78.1 71.6L59.7 53.5l-18 18.1c-.6.6-.6 1.5 0 2.1.3.3.7.4 1.1.4.4 0 .8-.1 1.1-.4l14.4-14.5v33.1c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-33L76 73.8c.6.6 1.6.6 2.1 0 .6-.7.6-1.6 0-2.2z"/><path class="dst0" d="M90.8 68.2h-8.2c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5h8.2c10.6 0 19.2-8.6 19.2-19.2 0-5.4-2.3-10.7-6.4-14.3-4.1-3.7-9.3-5.4-14.8-4.8l-1.4.1-.3-1.3C84.8 14.4 74.8 6.2 63.2 6.2c-7.9 0-15.1 3.7-19.8 10.1l-.6.8-1-.2c-1.8-.4-3.6-.6-5.4-.6-10.9 0-20.6 7.4-23.5 17.9l-.1.8-.8.2c-5.3 1.6-9 6.4-9 11.9 0 6.8 5.5 12.3 12.3 12.3 1.3 0 2.5-.2 3.7-.6l.8-.3.6.6c4.4 3.8 10 5.9 15.8 6 .8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5c-6.2 0-12.2-2.2-17-6.1-1.2.3-2.5.5-3.8.5C6.9 62.5 0 55.6 0 47.1c0-6.5 4.2-12.4 10.3-14.5 3.5-11.4 14.2-19.3 26.2-19.3 1.7 0 3.4.2 5.1.5C46.8 7 54.6 3.2 63.2 3.2c12.5 0 23.5 8.6 26.6 20.6 5.8-.3 11.5 1.8 15.8 5.6 4.7 4.2 7.4 10.3 7.4 16.6 0 12.2-10 22.2-22.2 22.2z"/><path class="dst0" d="M19.2 41.4c-.1 0-.3 0-.4-.1-.8-.2-1.3-1.1-1-1.9.1-.4 2.7-9.5 11-13.9 4.6-2.4 9.8-2.9 15.6-1.5 3.5-5.2 10.4-10.3 19.9-9.8.8 0 1.5.8 1.4 1.6 0 .8-.8 1.5-1.6 1.4-8.7-.5-14.9 4.5-17.8 9.3l-.6 1-1.1-.3c-5.5-1.5-10.4-1.2-14.5 1-7.2 3.8-9.5 11.7-9.5 12-.1.8-.7 1.2-1.4 1.2z"/></symbol><symbol viewBox="0 0 113 97" id="4-how" xmlns="http://www.w3.org/2000/svg"><path class="est0" d="M11 61H4.7c-1 0-1.7-.7-1.7-1.7V21.7c0-1 .7-1.7 1.7-1.7h92.7c.9 0 1.7.7 1.7 1.7V29h3v-7.3c0-2.6-2.1-4.7-4.7-4.7H4.7C2.1 17 0 19.1 0 21.7v37.7C0 61.9 2.1 64 4.7 64H11v-3z"/><path class="est0" d="M108.3 32c.9 0 1.7.7 1.7 1.7v37.7c0 .9-.7 1.7-1.7 1.7H15.7c-.9 0-1.7-.7-1.7-1.7V33.7c0-.9.7-1.7 1.7-1.7h92.6m0-3H15.7c-2.6 0-4.7 2.1-4.7 4.7v37.7c0 2.6 2.1 4.7 4.7 4.7h92.7c2.6 0 4.7-2.1 4.7-4.7V33.7c-.1-2.6-2.2-4.7-4.8-4.7z"/><path class="est0" d="M62 66c-7.4 0-13.5-6.1-13.5-13.5S54.6 39 62 39s13.5 6.1 13.5 13.5S69.4 66 62 66zm0-24c-5.8 0-10.5 4.7-10.5 10.5S56.2 63 62 63s10.5-4.7 10.5-10.5S67.8 42 62 42zm-37 9h17v3H25zm57 0h17v3H82z"/></symbol><symbol viewBox="0 0 14 10" id="all-arts" xmlns="http://www.w3.org/2000/svg"><path class="fst0" d="M0 0h14v2H0zm0 4h14v2H0zm0 4h11v2H0z"/></symbol><symbol viewBox="0 0 101 97" id="comfort" xmlns="http://www.w3.org/2000/svg"><path class="gst0" d="M50.5 4.4c.3 0 1.1.1 1.5.9l9.8 19.8c1.1 2.3 3.3 3.8 5.8 4.2l21.9 3.2c.9.1 1.3.8 1.4 1.1.1.3.2 1.1-.4 1.7L74.6 50.8c-1.8 1.8-2.6 4.3-2.2 6.8l3.7 21.8c.1.6-.1 1.1-.4 1.3-.3.4-.8.6-1.3.6-.3 0-.5-.1-.8-.2L54.1 70.9c-1.1-.6-2.4-.9-3.6-.9s-2.5.3-3.6.9L27.3 81.2c-.3.1-.5.2-.8.2-.5 0-1-.2-1.3-.6-.2-.3-.5-.7-.4-1.3l3.7-21.8c.4-2.5-.4-5-2.2-6.8L10.5 35.4c-.7-.7-.5-1.4-.4-1.7.1-.3.4-1 1.4-1.1l21.9-3.2c2.5-.4 4.7-1.9 5.8-4.2L49 5.3c.4-.8 1.2-.9 1.5-.9m0-3c-1.7 0-3.3.9-4.2 2.6l-9.8 19.8c-.7 1.4-2 2.3-3.5 2.6l-22 3.2c-3.8.6-5.4 5.3-2.6 8L24.3 53c1.1 1.1 1.6 2.6 1.3 4.1l-3.7 21.8c-.5 3 1.9 5.5 4.6 5.5.7 0 1.5-.2 2.2-.5l19.6-10.3c.7-.4 1.4-.5 2.2-.5s1.5.2 2.2.5l19.6 10.3c.7.4 1.5.5 2.2.5 2.7 0 5.1-2.5 4.6-5.5l-3.7-21.8c-.3-1.5.2-3.1 1.3-4.1l15.9-15.4c2.8-2.7 1.2-7.4-2.6-8l-22-3.2c-1.5-.2-2.8-1.2-3.5-2.6L54.7 4c-.9-1.7-2.5-2.6-4.2-2.6zm29.4.7c-.5 0-.9.2-1.2.6l-4.1 5.7c-.5.7-.3 1.6.3 2.1.3.2.6.3.9.3.5 0 .9-.2 1.2-.6l4.1-5.7c.5-.7.3-1.6-.3-2.1-.3-.2-.6-.3-.9-.3zm-58.7 0c-.3 0-.6.1-.9.3-.7.5-.8 1.4-.3 2.1l4.1 5.7c.3.4.8.6 1.2.6.3 0 .6-.1.9-.3.7-.5.8-1.4.3-2.1l-4.1-5.7c-.3-.3-.8-.6-1.2-.6zM9.6 55.7c-.2 0-.3 0-.5.1l-6.7 2.1c-.8.3-1.2 1.1-1 1.9.2.6.8 1 1.4 1 .2 0 .3 0 .5-.1l6.7-2.1c.8-.3 1.2-1.1 1-1.9-.2-.6-.8-1-1.4-1zm81.8.2c-.6 0-1.2.4-1.4 1-.3.8.2 1.6 1 1.9l6.7 2.2c.2.1.3.1.5.1.6 0 1.2-.4 1.4-1 .3-.8-.2-1.6-1-1.9L91.9 56c-.2 0-.3-.1-.5-.1zM50.5 85.6c-.8 0-1.5.7-1.5 1.5v7c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-7c0-.8-.6-1.5-1.5-1.5z"/></symbol><symbol viewBox="0 0 97 97" id="credit-card" xmlns="http://www.w3.org/2000/svg"><path class="hst0" d="M87.6 17.5c3.5 0 6.4 2.9 6.4 6.4v49.3c0 3.5-2.9 6.4-6.4 6.4H9.4c-3.5 0-6.4-2.9-6.4-6.4V23.9c0-3.5 2.9-6.4 6.4-6.4h78.2m0-3H9.4c-5.2 0-9.4 4.2-9.4 9.4v49.3c0 5.2 4.2 9.4 9.4 9.4h78.3c5.2 0 9.4-4.2 9.4-9.4V23.9c-.1-5.2-4.3-9.4-9.5-9.4z"/><path class="hst0" d="M94 27.6H3v3h91zm0 14H3v3h91zM38 56.5H12v3h26zm19 8H12v3h45z"/></symbol><symbol viewBox="0 0 23 29" id="doc" xmlns="http://www.w3.org/2000/svg"><path class="ist0" d="M14.8 3L20 8.2V26H3V3h11.8M16 0H0v29h23V7l-7-7z"/><path class="ist0" d="M5 10h9v3H5zm0 5h13v3H5zm0 5h13v3H5z"/></symbol><symbol viewBox="0 0 97 97" id="economy" xmlns="http://www.w3.org/2000/svg"><path class="jst0" d="M75.7 93.5H59.4c-7.7 0-15.3-1.7-16.8-2C31.1 88.7 29.8 88.3 29 88h-.1c-1.3-.3-3.6-1.4-3.6-4.2V40.9c0-2.1 1.4-3.9 3.4-4.6C42 30.8 46.9 17.9 47 7.7c0-2.3 1.9-4.2 4.2-4.2 9.7 0 9.7 11 9.7 15.1 0 6.9-.3 8.7-2.2 14.8 15.3.1 25.1 1.8 28.9 2.4.7.1 1.2.2 1.5.2l1.2.3c1.3.6 2.2 1.4 2.7 2.3.3.6.5 1.3.5 2-.1 26.8-11 49-11.1 49.2-1.3 2.6-3.4 3.7-6.7 3.7zm-24.5-87c-.7 0-1.2.5-1.2 1.2-.1 11.2-5.5 25.3-20.3 31.4h-.1c-.8.3-1.4 1-1.4 1.8v42.9c0 1 1.2 1.2 1.3 1.2h.2l.2.1c.7.2 2.1.6 13.5 3.4.9.2 8.5 1.9 16.1 1.9h16.2c2.8 0 3.6-1 4.1-1.9.1-.2 10.7-21.6 10.8-47.8 0-.2-.1-.4-.1-.6-.2-.4-.7-.7-1.3-1-.1 0-.2-.1-.4-.1-.3 0-.9-.1-1.6-.3-3.9-.7-14.3-2.4-30.5-2.4-.5 0-.9-.2-1.2-.6s-.4-.9-.2-1.3c2.4-7.5 2.7-8.6 2.7-15.9-.1-10.5-3.3-12-6.8-12zm-43.5 84c-2.3 0-4.2-1.9-4.2-4.2v-47c0-2.3 1.9-4.2 4.2-4.2h10.4c2.4 0 4.2 1.8 4.2 4.2v46.9c0 2.3-1.9 4.2-4.2 4.2l-10.4.1zm0-52.4c-.7 0-1.2.5-1.2 1.2v46.9c0 .7.5 1.2 1.2 1.2l10.4-.1c.7 0 1.2-.5 1.2-1.2V39.3c0-.7-.5-1.2-1.2-1.2H7.7z"/></symbol><symbol viewBox="0 0 105 97" id="edit" xmlns="http://www.w3.org/2000/svg"><path class="kst0" d="M52.5 5.5c12.2 0 17.9 6.8 17.9 21.4 0 11.8-8 21.4-17.9 21.4-9.8 0-17.9-9.6-17.9-21.4 0-14.6 5.7-21.4 17.9-21.4M36 55.7c4.9 3.4 10.6 5.2 16.5 5.2s11.6-1.8 16.5-5.2l15.3 7.9c.5.2.8.6 1 1.1l10.5 23.7c.3.7.2 1.5-.2 2.1-.4.6-1.1 1-1.9 1H11.3c-.8 0-1.5-.4-1.9-1-.4-.7-.5-1.5-.2-2.2l10.5-23.7c.2-.5.6-.9 1-1.1L36 55.7M52.5 2.5C41 2.5 31.6 8.2 31.6 26.9c0 13.5 9.3 24.4 20.9 24.4 11.5 0 20.9-10.9 20.9-24.4C73.4 8.2 64 2.5 52.5 2.5zm16.3 49.8c-.2 0-.4.1-.6.2-4.6 3.5-10 5.3-15.7 5.3-5.7 0-11.1-1.8-15.7-5.3-.2-.1-.4-.2-.6-.2-.2 0-.3 0-.5.1l-16.3 8.5c-1.1.5-1.9 1.4-2.4 2.5L6.5 87.1c-.7 1.6-.6 3.5.4 5s2.6 2.4 4.4 2.4h82.5c1.8 0 3.4-.9 4.4-2.4 1-1.5 1.1-3.4.4-5L88 63.5c-.5-1.1-1.3-2-2.4-2.5l-16.3-8.5c-.1-.1-.3-.2-.5-.2z"/></symbol><symbol viewBox="0 0 97 97" id="fast" xmlns="http://www.w3.org/2000/svg"><path class="lst0" d="M48.5 3C73.6 3 94 23.4 94 48.5S73.6 94 48.5 94 3 73.6 3 48.5 23.4 3 48.5 3m0-3C21.7 0 0 21.7 0 48.5S21.7 97 48.5 97 97 75.3 97 48.5 75.3 0 48.5 0z"/><path class="lst1" d="M73.8 73.8c-.9.9-.9 2.4 0 3.3.9.9 2.4.9 3.3 0s.9-2.4 0-3.3c-.9-.9-2.3-.9-3.3 0zM19.9 19.9c-.9.9-.9 2.4 0 3.3.9.9 2.4.9 3.3 0 .9-.9.9-2.4 0-3.3-1-.9-2.4-.9-3.3 0zm53.9 0c-.9.9-.9 2.4 0 3.3.9.9 2.4.9 3.3 0 .9-.9.9-2.4 0-3.3-.9-.9-2.3-.9-3.3 0zM19.9 73.8c-.9.9-.9 2.4 0 3.3s2.4.9 3.3 0c.9-.9.9-2.4 0-3.3-1-.9-2.4-.9-3.3 0zm66.8-27.6c-1.3 0-2.3 1-2.3 2.3 0 1.3 1 2.3 2.3 2.3 1.3 0 2.3-1 2.3-2.3 0-1.3-1-2.3-2.3-2.3zm-76.4 0c-1.3 0-2.3 1-2.3 2.3 0 1.3 1 2.3 2.3 2.3 1.3 0 2.3-1 2.3-2.3.1-1.3-1-2.3-2.3-2.3zM48.5 8c-1.3 0-2.3 1-2.3 2.3 0 1.3 1 2.3 2.3 2.3 1.3 0 2.3-1 2.3-2.3 0-1.3-1-2.3-2.3-2.3zm0 76.3c-1.3 0-2.3 1-2.3 2.3 0 1.3 1 2.3 2.3 2.3 1.3 0 2.3-1 2.3-2.3 0-1.2-1-2.3-2.3-2.3zm34.1-55.8c-.4-.7-1.3-1-2-.5L53.9 43.7c-1.2-1.4-2.9-2.2-4.9-2.2-1.3 0-2.4.4-3.4 1L31 27.9c-.6-.6-1.5-.6-2.1 0-.6.6-.6 1.5 0 2.1l14.6 14.6c-.6 1-1 2.2-1 3.4 0 3.6 2.9 6.5 6.5 6.5s6.5-2.9 6.5-6.5c0-.6-.1-1.1-.2-1.6L82 30.5c.7-.4 1-1.3.6-2zM49 51.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z"/></symbol><symbol viewBox="0 0 105 109" id="file" xmlns="http://www.w3.org/2000/svg"><path class="mst0" d="M101 73.9c-.6-.6-1.5-.6-2.1 0l-26.4 26.4L57 84.9c-.6-.6-1.5-.6-2.1 0-.6.6-.6 1.5 0 2.1l16 16c.4.4 1 .5 1.6.3.5.2 1.1.1 1.5-.3l27-27c.6-.5.6-1.5 0-2.1z"/><path class="mst1" d="M85.5 75V11c0-3.6-2.9-6.5-6.5-6.5H12c-3.6 0-6.5 2.9-6.5 6.5v87c0 3.6 2.9 6.5 6.5 6.5h48l-3-3H12c-1.9 0-3.5-1.6-3.5-3.5V11c0-1.9 1.6-3.5 3.5-3.5h67c1.9 0 3.5 1.6 3.5 3.5v68l3-3v-1z"/><path class="mst0" d="M69 25v2H24v-2h45m1-3H23c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h47c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm-1 23v2H24v-2h45m1-3H23c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h47c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm-1 23v2H24v-2h45m1-3H23c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h47c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2z"/></symbol><symbol viewBox="0 0 105 97" id="for_u" xmlns="http://www.w3.org/2000/svg"><path class="nst0" d="M105 25.2c0-4.7-3.8-8.5-8.5-8.5S88 20.5 88 25.2c0 2.8 1.4 5.3 3.5 6.8L71 53.2 57.6 32.1c2.1-1.5 3.4-4 3.4-6.8 0-4.7-3.8-8.5-8.5-8.5S44 20.6 44 25.3c0 2.8 1.3 5.3 3.4 6.8L34 53.2 13.5 32.1c2.1-1.5 3.5-4 3.5-6.8 0-4.7-3.8-8.5-8.5-8.5S0 20.6 0 25.3c0 3.9 2.7 7.2 6.3 8.2L12 77.2s0 3 3 3h75c3 0 3-3 3-3l5.7-43.8c3.6-.9 6.3-4.2 6.3-8.2zm-52.5-5.5c3 0 5.5 2.5 5.5 5.5s-2.5 5.5-5.5 5.5-5.5-2.5-5.5-5.5 2.5-5.5 5.5-5.5zM57 32.5s-.1 0 0 0c-.1 0 0 0 0 0zm-7.6.7zm-.7-.3s0-.1 0 0c0-.1 0 0 0 0zm-.6-.4c-.1 0-.1 0 0 0-.1 0-.1 0 0 0zM3 25.2c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5-2.5 5.5-5.5 5.5S3 28.3 3 25.2zm9.9 7.3zm-.7.4zm-.7.3zm-4.2.5zM90 76.9v.4H15v-.4l-.5-3.6H73c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H14.1L9.4 33.7c.4 0 .9-.1 1.3-.3l21.2 21.9 2.7 2.7 2-3.2 13.6-21.4c.8.2 1.6.3 2.4.3.8 0 1.6-.1 2.4-.3l13.6 21.4 2 3.2 2.7-2.7 21.2-21.9c.4.1.9.2 1.3.3L90 76.9zM56.3 32.8s0 .1 0 0c0 .1 0 0 0 0zm-.7.4zm36.5-.7zm.7.4zm.7.3zm4.1.5h.1-.1zm-1.1-3c-3 0-5.5-2.5-5.5-5.5s2.5-5.5 5.5-5.5 5.5 2.5 5.5 5.5c0 3.1-2.5 5.5-5.5 5.5z"/><path class="nst0" d="M82 70.2h-3c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h3c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5z"/></symbol><symbol viewBox="0 0 14 16" id="garbage" xmlns="http://www.w3.org/2000/svg"><path class="ost0" d="M12.8 13.2V3.9H14V2.3h-3.3v-.4c0-1-.9-1.9-1.9-1.9H5.3c-1 0-1.9.9-1.9 1.9v.3H0v1.6h1.2v9.3c0 1.5 1.2 2.8 2.6 2.8h6.4c1.4.1 2.6-1.2 2.6-2.7zM4.9 1.9c0-.2.2-.4.4-.4h3.5c.2 0 .4.2.4.4v.3H4.9v-.3zM2.7 13.2V3.9h8.7v9.3c0 .7-.5 1.2-1.2 1.2H3.8c-.6 0-1.1-.5-1.1-1.2z"/><path class="ost0" d="M6.2 5.5h1.5v7.1H6.2zm2.1 0h1.5v7.1H8.3zm-4.1 0h1.5v7.1H4.2z"/></symbol><symbol viewBox="0 0 26 26" id="hide" xmlns="http://www.w3.org/2000/svg"><path class="pst0" d="M13 1.4c6.4 0 11.6 5.2 11.6 11.6S19.4 24.6 13 24.6 1.4 19.4 1.4 13 6.6 1.4 13 1.4M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.8 13-13S20.2 0 13 0z"/><path class="pst0" d="M7.9 12.3h10.2v1.4H7.9z"/></symbol><symbol viewBox="0 0 24 24" id="logout" xmlns="http://www.w3.org/2000/svg"><path class="qst0" d="M23.9 11.4c.1-.2.1-.5 0-.8-.1-.1-.1-.2-.2-.3l-3-3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l1.3 1.3H14c-.6 0-1 .4-1 1s.4 1 1 1h6.6l-1.3 1.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3.3 0 .5-.1.7-.3l3-3c.1-.1.1-.2.2-.3z"/><path class="qst0" d="M17 17c-.6 0-1 .4-1 1v1.5c0 .3-.2.5-.5.5H12V5c0-.9-.6-1.7-1.5-1.9L6.4 2h9.1c.3 0 .5.2.5.5V4c0 .6.4 1 1 1s1-.4 1-1V2.5C18 1.1 16.9 0 15.5 0H2.1C1 0 0 .9 0 2.1c0 .1 0 .2.1.3 0 .1-.1.2-.1.3v17.6c0 .9.7 1.8 1.6 2l8 1.7h.4c.5 0 .9-.2 1.3-.4.5-.4.7-.9.7-1.6h3.5c1.4 0 2.5-1.1 2.5-2.5V18c0-.6-.5-1-1-1zM2 20.3V2.9L10 5v17l-8-1.7z"/></symbol><symbol viewBox="0 0 18 14" id="menu" xmlns="http://www.w3.org/2000/svg"><path class="rst0" d="M17.1 2.5H.9c-.5 0-.9-.4-.9-.9V.9C0 .4.4 0 .9 0h16.3c.4 0 .8.4.8.9v.8c0 .4-.4.8-.9.8zm0 11.5H.9c-.5 0-.9-.4-.9-.9v-.8c0-.5.4-.9.9-.9h16.3c.5 0 .9.4.9.9v.8c-.1.5-.5.9-1 .9zm0-5.7H.9c-.5 0-.9-.4-.9-.9v-.8c0-.5.4-.9.9-.9h16.3c.5 0 .9.4.9.9v.8c-.1.5-.5.9-1 .9z"/></symbol><symbol viewBox="0 0 97 97" id="passport" xmlns="http://www.w3.org/2000/svg"><path class="sst0" d="M79 11.3l-.7-7c-.6-1.4-2.1-2.2-3.6-2L19.2 11h.1C17 11 15 13 15 15.4v77.2c0 2.4 2 4.4 4.4 4.4h58.2c2.4 0 4.4-2 4.4-4.4V15.4c0-1.9-1.3-3.5-3-4.1zm-3.9-6.1c.2 0 .4.1.5.3l.5 5.5H38.5l36.6-5.8zM79 92.6c0 .8-.6 1.4-1.4 1.4H19.4c-.8 0-1.4-.6-1.4-1.4V15.4c0-.8.6-1.4 1.4-1.4h58.2c.8 0 1.4.6 1.4 1.4v77.2z"/><path class="sst0" d="M26.7 69.3h43.6v3H26.7zm0 6h43.6v3H26.7zm0-15.3V37h9.2c4.6 0 7.2 3.2 7.2 6.9 0 3.8-2.7 6.9-7.2 6.9h-6.4V60h-2.8zm13.5-16.1c0-2.6-1.9-4.4-4.6-4.4h-6v8.8h6c2.7 0 4.6-1.8 4.6-4.4zM56.7 60v-2.2c-6.7-.4-10.7-4-10.7-9.2 0-5.1 4-8.8 10.7-9.2V37h2.9v2.3c6.6.4 10.7 4.1 10.7 9.2 0 5.2-4.1 8.8-10.7 9.2V60h-2.9zm0-4.8V41.9c-4.9.4-7.7 3-7.7 6.7 0 3.6 2.8 6.2 7.7 6.6zm2.9-13.3v13.3c4.9-.4 7.8-3 7.8-6.7-.1-3.6-3-6.2-7.8-6.6z"/></symbol><symbol viewBox="0 0 18 18" id="question" xmlns="http://www.w3.org/2000/svg"><path class="tst0" d="M9 2c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7m0-2C4 0 0 4 0 9s4 9 9 9 9-4 9-9-4-9-9-9z"/><path class="tst0" d="M8.4 10.8c-.3-.3-.5-.7-.5-1.2 0-.3.1-.5.2-.7.1-.2.2-.4.4-.5.1-.2.3-.4.4-.5s.3-.2.5-.4c.1-.1.3-.2.4-.4.1-.1.2-.2.2-.4s-.1-.4-.3-.6c-.2-.1-.4-.2-.8-.2s-.7.1-1 .2c-.3.2-.5.5-.8.7L6 5.5c.4-.4.8-.8 1.4-1 .5-.2 1.1-.3 1.7-.3.4 0 .9.1 1.2.2s.7.3.9.5c.3.2.4.4.6.7.1.2.2.5.2.8 0 .3-.1.6-.2.9-.1.2-.3.5-.4.6-.2.2-.4.3-.6.5-.2.1-.4.3-.6.4-.1.2-.3.3-.4.5-.1.1-.2.3-.2.5 0 .1 0 .2.1.3s.1.2.2.3l-1.5.4zm.6 3c-.3 0-.6-.1-.8-.3-.2-.2-.3-.5-.3-.8 0-.3.1-.6.3-.8.2-.2.5-.3.8-.3.3 0 .6.1.8.3.2.2.3.5.3.8 0 .3-.1.6-.3.8-.2.2-.4.3-.8.3z"/></symbol><symbol viewBox="0 0 18 18" id="secure" xmlns="http://www.w3.org/2000/svg"><path class="ust0" d="M15.5 3.4L9.4.1c-.3-.1-.6-.1-.9 0l-6 3.3c-.3.2-.5.5-.5.8v4.7c0 3.8 2.2 7.2 5.7 8.7l.8.4h.4c.1 0 .2 0 .4-.1l.9-.4C13.7 16 16 12.6 16 8.8V4.2c0-.3-.2-.6-.5-.8zM8.9 2l5.2 2.8v4L9.8 6.5c-.5-.3-1.2-.3-1.8 0L3.9 8.8v-4l5-2.8zm.6 13.8l-.6.2-.4-.2c-2.2-.9-3.7-2.8-4.3-5L9 8.2l4.9 2.6c-.7 2.2-2.2 4.1-4.4 5z"/></symbol><symbol viewBox="0 0 105 109" id="settings" xmlns="http://www.w3.org/2000/svg"><path class="vst0" d="M52.6 9c1.6 0 3.3.1 5 .3-.2 5.7 3.1 11 8.4 13.2 1.6.7 3.3 1 5.1 1 3.9 0 7.7-1.6 10.2-4.3 2.5 2 4.8 4.3 6.8 6.9C84 30 82.7 36 84.8 41.2c2.1 5.2 7.2 8.5 12.8 8.5 0 0 .1 0 .2.1.3 3.3.3 6.5 0 9.7h-.4c-5.5 0-10.6 3.4-12.7 8.4-2.2 5.3-.9 11.4 3.3 15.3-2.1 2.5-4.4 4.9-7 6.9-2.5-2.7-6.3-4.2-10.2-4.2-1.8 0-3.4.3-5 1-5.2 2.1-8.6 7.3-8.5 12.9-1.6.2-3.1.2-4.7.2-1.7 0-3.3-.1-5-.3.2-5.7-3.1-11-8.4-13.2-1.6-.7-3.3-1-5.1-1-3.9 0-7.7 1.6-10.2 4.3-2.5-2-4.8-4.4-6.8-6.9 4.1-3.9 5.4-9.9 3.3-15.2-2.1-5.1-7.1-8.5-12.5-8.5h-.3c-.1 0-.2 0-.2-.1-.3-3.2-.3-6.5 0-9.7 5.9-.1 11.1-3.3 13.2-8.4 2.2-5.3.9-11.4-3.3-15.3 2.1-2.5 4.4-4.8 7-6.9 2.5 2.7 6.3 4.2 10.2 4.2 1.8 0 3.4-.3 5-.9 5.2-2.1 8.6-7.3 8.5-12.9 1.4-.1 3-.2 4.6-.2m0-3c-1.8 0-3.6.1-5.3.3-1.4.2-2.4 1.4-2.4 2.8.2 4.5-2.5 8.7-6.6 10.3-1.2.5-2.5.7-3.8.7-3 0-6.2-1.2-8.2-3.5-.5-.6-1.3-.9-2-.9-.6 0-1.2.2-1.7.6-2.9 2.3-5.6 4.9-7.8 7.8-.9 1.1-.8 2.7.3 3.7 3.4 3.1 4.5 7.9 2.7 12.1-1.7 4-5.8 6.6-10.6 6.6h-.1c-1.5 0-2.5 1-2.7 2.4-.4 3.6-.4 7.4 0 11 .2 1.4 1.8 2.4 3.2 2.4h.3c4.1 0 8.1 2.6 9.7 6.6 1.7 4.1.6 9-2.7 12-1 1-1.2 2.5-.3 3.7 2.3 2.9 4.8 5.5 7.7 7.8.5.4 1.1.6 1.7.6.7 0 1.5-.3 2-.9 2-2.2 5.1-3.5 8.2-3.5 1.3 0 2.7.2 3.9.8 4.2 1.8 6.8 6 6.6 10.5-.1 1.4 1 2.7 2.4 2.8 1.9.2 3.7.3 5.6.3 1.8 0 3.6-.1 5.3-.3 1.4-.2 2.4-1.4 2.4-2.8-.2-4.5 2.5-8.7 6.6-10.3 1.2-.5 2.5-.7 3.8-.7 3.1 0 6.2 1.2 8.2 3.5.5.6 1.3.9 2 .9.6 0 1.2-.2 1.7-.6 2.9-2.3 5.5-4.9 7.8-7.8.9-1.1.8-2.7-.3-3.7-3.4-3.1-4.5-7.9-2.7-12.1 1.6-3.9 5.6-6.6 9.9-6.6h.8c1.3 0 2.5-1 2.6-2.4.4-3.6.4-7.4 0-11-.2-1.4-1.7-2.4-3.1-2.4-4.4 0-8.4-2.6-10-6.6-1.7-4.1-.6-9 2.7-12 1-1 1.2-2.5.3-3.7-2.3-2.9-4.9-5.5-7.7-7.8-.5-.4-1.1-.6-1.7-.6-.7 0-1.5.3-2 .9-2 2.2-5.1 3.5-8.2 3.5-1.4 0-2.7-.2-3.9-.8-4.2-1.8-6.8-6-6.6-10.5.1-1.4-1-2.7-2.4-2.8-1.9-.2-3.8-.3-5.6-.3z"/><path class="vst0" d="M52.5 39C61 39 68 46 68 54.5S61 70 52.5 70 37 63 37 54.5 44 39 52.5 39m0-3C42.3 36 34 44.3 34 54.5S42.3 73 52.5 73 71 64.7 71 54.5 62.7 36 52.5 36z"/></symbol><symbol viewBox="0 0 26 26" id="show" xmlns="http://www.w3.org/2000/svg"><path class="wst0" d="M13 1.4c6.4 0 11.6 5.2 11.6 11.6S19.4 24.6 13 24.6 1.4 19.4 1.4 13 6.6 1.4 13 1.4M13 0C5.8 0 0 5.8 0 13s5.8 13 13 13 13-5.8 13-13S20.2 0 13 0z"/><path class="wst0" d="M18.1 12.3h-4.4V7.9h-1.4v4.4H7.9v1.4h4.4v4.4h1.4v-4.4h4.4z"/></symbol><symbol viewBox="0 0 97 97" id="smartphone" xmlns="http://www.w3.org/2000/svg"><path class="xst0" d="M76.4 3C77.8 3 79 4.2 79 5.6v85.8c0 1.4-1.2 2.6-2.6 2.6H20.6c-1.4 0-2.6-1.2-2.6-2.6V5.6C18 4.2 19.2 3 20.6 3h55.8m0-3H20.6C17.5 0 15 2.5 15 5.6v85.8c0 3.1 2.5 5.6 5.6 5.6h55.8c3.1 0 5.6-2.5 5.6-5.6V5.6C82 2.5 79.5 0 76.4 0z"/><path class="xst0" d="M69.4 9c1.4 0 2.6 1.2 2.6 2.6v61.8c0 1.4-1.2 2.6-2.6 2.6H27.6c-1.4 0-2.6-1.2-2.6-2.6V11.6c0-1.4 1.2-2.6 2.6-2.6h41.8m0-3H27.6C24.5 6 22 8.5 22 11.6v61.8c0 3.1 2.5 5.6 5.6 5.6h41.8c3.1 0 5.6-2.5 5.6-5.6V11.6C75 8.5 72.5 6 69.4 6zM48.5 83.5c1.6 0 2.8 1.3 2.8 2.8 0 1.6-1.3 2.8-2.8 2.8s-2.8-1.3-2.8-2.8 1.2-2.8 2.8-2.8m0-3c-3.2 0-5.8 2.6-5.8 5.8 0 3.2 2.6 5.8 5.8 5.8s5.8-2.6 5.8-5.8-2.6-5.8-5.8-5.8z"/></symbol><symbol viewBox="0 0 97 97" id="users" xmlns="http://www.w3.org/2000/svg"><path class="yst0" d="M48.5 3c2.4 0 4.6.9 6.3 2.6l36.6 36.6c3.5 3.5 3.5 9.1 0 12.6L54.8 91.4c-1.7 1.7-3.9 2.6-6.3 2.6s-4.6-.9-6.3-2.6L5.6 54.8c-3.5-3.5-3.5-9.1 0-12.6L42.2 5.6C43.9 3.9 46.1 3 48.5 3m0-3c-3 0-6.1 1.2-8.4 3.5L3.5 40.1c-4.6 4.6-4.6 12.2 0 16.8l36.6 36.6c2.3 2.3 5.4 3.5 8.4 3.5s6.1-1.2 8.4-3.5l36.6-36.6c4.6-4.6 4.6-12.2 0-16.8L56.9 3.5C54.6 1.2 51.5 0 48.5 0z"/><path class="yst0" d="M71.4 46.5h-3.6v-3.6h-3v3.6h-3.6v3h3.6v3.6h3v-3.6h3.6zM31.5 60.9V40.1l-4 4.2-1.9-1.9 6.2-6.4h2.7v24.9h-3zm7.9-6.3c0-3.3 2.8-5.6 5.9-6.5-2.9-.8-5.5-2.7-5.5-6 0-4.5 4.4-6.5 8.5-6.5s8.5 2 8.5 6.5c0 3.3-2.7 5.1-5.6 6 3.1.9 5.9 3.2 5.9 6.5 0 4.2-4 6.7-8.9 6.7-4.8 0-8.8-2.5-8.8-6.7zm14.7-.3c0-3.2-4.3-4.6-5.8-4.8-1.5.2-5.8 1.6-5.8 4.8 0 2.7 2.7 4.3 5.8 4.3 3.1 0 5.8-1.7 5.8-4.3zm-.4-11.8c0-2.6-2.4-4.1-5.4-4.1s-5.4 1.5-5.4 4.1c0 3 3.9 4 5.4 4.3 1.5-.3 5.4-1.3 5.4-4.3z"/></symbol><symbol viewBox="0 0 113 109" id="wallet" xmlns="http://www.w3.org/2000/svg"><path class="zst0" d="M11 68.9H4.7c-1 0-1.7-.7-1.7-1.7V29.7c0-1 .7-1.7 1.7-1.7h92.7c.9 0 1.7.7 1.7 1.7V37h3v-7.3c0-2.6-2.1-4.7-4.7-4.7H4.7C2.1 25 0 27.1 0 29.7v37.7C0 69.9 2.1 72 4.7 72H11v-3.1z"/><path class="zst0" d="M108.3 40c.9 0 1.7.7 1.7 1.7v37.7c0 .9-.7 1.7-1.7 1.7H15.7c-.9 0-1.7-.7-1.7-1.7V41.7c0-.9.7-1.7 1.7-1.7h92.6m0-3H15.7c-2.6 0-4.7 2.1-4.7 4.7v37.7c0 2.6 2.1 4.7 4.7 4.7h92.7c2.6 0 4.7-2.1 4.7-4.7V41.7c-.1-2.6-2.2-4.7-4.8-4.7z"/><path class="zst0" d="M62 73.9c-7.4 0-13.5-6.1-13.5-13.5S54.6 47 62 47s13.5 6 13.5 13.5S69.4 73.9 62 73.9zM62 50c-5.8 0-10.5 4.7-10.5 10.5S56.2 70.9 62 70.9s10.5-4.7 10.5-10.5S67.8 50 62 50zm-37 9h17v3H25zm57 0h17v3H82z"/></symbol></svg></div>
+  <div class="footer-box footer-box__margined">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <ul class="payment__box">
+              <li class="payment__item"><img class="payment__img payment__img_visa" src="img/svg/visa_footer.svg" title="Visa" alt="Visa"></li>
+              <li class="payment__item"><img class="payment__img payment__mastercard" src="img/svg/mastercard_footer.svg" title="MasterCard" alt="MasterCard"></li>
+              <li class="payment__item"><img class="payment__img payment__img_comodo" src="img/svg/comodo_footer.svg" title="Comodo" alt="Comodo"></li>
+            </ul>
+          </div>
+          <div class="col-md-10">
+            <ul class="footer__list">
+              <li class="footer__item"><span class="footer__list_title">О компании</span>
+                <ul class="footer__list_sub">
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./about.html">О нас</a></li>
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./contacts.html">Контакты</a></li>
+                </ul>
+              </li>
+              <li class="footer__item"><span class="footer__list_title">Получить деньги</span>
+                <ul class="footer__list_sub">
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./how-it-work.html">Как это работает</a></li>
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./how-to-loan.html">Как получить заем</a></li>
+                </ul>
+              </li>
+              <li class="footer__item"><span class="footer__list_title">Помощь</span>
+                <ul class="footer__list_sub">
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./faq.html">Вопросы и ответы</a></li>
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./feedback.html">Обратная связь</a></li>
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./documents.html">Документы</a></li>
+                </ul>
+              </li>
+              <li class="footer__item"><a class="footer__list_title footer__list_title-anchor" href="./articles.html">Статьи</a>
+                <ul class="footer__list_sub">
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./document.html">Заем на банковский счет</a></li>
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./document.html">Безопасность онлайн займов</a></li>
+                  <li class="footer__item_sub"><a class="footer__link_sub" href="./document.html">Исправленние кредитной истории</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="crp-box">© 2017 ООО «Занимало»</div>
+      </div>
+      <div class="seo-box">
+        <div class="container">
+          <p class="seo__text small">Услуги на проекте «Занимало» оказываются юридическим лицом ООО «Телепорт Медиа», которое действует в интересах и по поручению организации ООО Микрокредитная Компания «Берлин». Свидетельство о внесении сведений о юридическом лице в государственный реестр микрофинансовых организаций № 1703045008133, которая на основании ФЗ "О потребительском кредите (займе)" от 21.12.2013 N 353-ФЗ имеет право осуществлять профессиональную деятельность по предоставлению потребительских займов. Проект осуществляет только подбор микрозаймов для клиентов, а именно, между клиентом который желает взять займ, и кредитным учреждением, а также некредитными финансовыми организациями в случаях, определенных федеральными законами об их деятельности, которые занимаются выдачей займов. Проект не является финансовым учреждением, банком или кредитором, и не несёт ответственности за любые заключенные договоры кредитования или условия. Чтобы оформить заявку на получение займа, Вам необходимо пройти регистрацию и аутентификацию на проекте. Ссылка на документы и разрешительную документацию организаций в интересах которых действует юридическое лицо ООО «Гутлид». Чтобы оформить заявку на получение займа, Вам необходимо пройти регистрацию и аутентификацию на проекте. Проект не является финансовым учреждением, банком или кредитором, и не несёт ответственности за любые заключенные договоры кредитования или условия.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="libs/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+  <script src="libs/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+  <script src="js/jQuery.animateTransform.js" type="text/javascript"></script>
+  <script src="libs/nouislider/distribute/nouislider.min.js" type="text/javascript"></script>
+  <script src="js/bundle.js" type="text/javascript"></script>
+</html>

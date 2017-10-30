@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{filter:url(#c);}
+	.st2{opacity:0.75;fill:#16171A;}
+	.st3{fill:#E09C7E;}
+	.st4{clip-path:url(#SVGID_2_);}
+	
+		.st5{fill:#FFFFFF;fill-opacity:0;stroke:#FFFFFF;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:50;}
+</style>
+<!--<filter  filterUnits="userSpaceOnUse" height="80" id="c" width="72" x="1416" y="118">-->
+	<!--<feOffset  dy="8" in="SourceGraphic" result="FeOffset1066Out"></feOffset>-->
+	<!--<feGaussianBlur  in="FeOffset1066Out" result="FeGaussianBlur1067Out" stdDeviation="6.4 6.4"></feGaussianBlur>-->
+<!--</filter>-->
+<path class="st0" d="M1442,128h20v20h-20V128z"/>
+<g>
+	<path id="a" d="M1460.5,131.8l-2.6-2.6l-5.9,5.9l-5.6-5.6l-2.4,2.4l5.6,5.6l-6.3,6.4l2.6,2.6l6.3-6.4l5.6,5.6l2.4-2.4l-5.6-5.6
+		L1460.5,131.8z"/>
+</g>
+<g transform="translate(-1426 -120)">
+	<g class="st1">
+		<g>
+			<g id="a_5_">
+				<polygon class="st2" points="1470.5,132.5 1464.9,126.9 1452.2,139.6 1440.1,127.5 1434.8,132.7 1447,144.9 1433.2,158.6 
+					1438.8,164.2 1452.5,150.4 1464.7,162.6 1469.9,157.3 1457.8,145.2 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<path id="a_3_" class="st3" d="M1470.5,132.5l-5.6-5.6l-12.7,12.7l-12.1-12.1l-5.2,5.2l12.1,12.2l-13.8,13.8l5.6,5.6l13.8-13.8
+			l12.1,12.2l5.2-5.2l-12.1-12.1L1470.5,132.5z"/>
+	</g>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M1426,172v-52h52v52H1426z M1470.5,132.5l-5.6-5.6l-12.7,12.7l-12.1-12.1l-5.2,5.2l12.1,12.2l-13.8,13.8
+				l5.6,5.6l13.8-13.8l12.1,12.2l5.2-5.2l-12.1-12.1L1470.5,132.5z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st4">
+			<path id="a_4_" class="st5" d="M1470.5,132.5l-5.6-5.6l-12.7,12.7l-12.1-12.1l-5.2,5.2l12.1,12.2l-13.8,13.8l5.6,5.6l13.8-13.8
+				l12.1,12.2l5.2-5.2l-12.1-12.1L1470.5,132.5z"/>
+		</g>
+	</g>
+</g>
+</svg>

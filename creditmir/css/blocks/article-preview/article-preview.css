@@ -1,0 +1,83 @@
+.article-prev {
+  min-height: 206px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .article-prev {
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article-prev {
+    height: auto;
+  }
+}
+
+.article-prev__pic {
+  position: relative;
+  display: block;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.article-prev__img {
+  display: none;
+}
+
+.article-prev__title {
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  color: #1a4388;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.article-prev__title:hover {
+  color: #009ae9;
+}
+
+.article-prev__desc {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+}
+
+.article-prev__more {
+  font-size: 25px;
+  font-weight: 300;
+  color: #1a4388;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.article-prev__more svg {
+  display: inline-block;
+  width: 22px;
+  height: 15px;
+  margin-left: 5px;
+  margin-bottom: -3px;
+  fill: #1a4388;
+}
+
+.article-prev__more:hover {
+  color: #009ae9;
+}
+
+.article-prev__more:hover svg {
+  fill: #009ae9;
+}
+
+@media screen and (max-width: 767px) {
+  .article-prev {
+    min-height: initial;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFydGljbGUtcHJldmlldy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0NBQ3JCOztBQUVEO0VBQ0U7SUFDRSxjQUFjO0dBQ2Y7Q0FDRjs7QUFFRDtFQUNFO0lBQ0UsYUFBYTtHQUNkO0NBQ0Y7O0FBRUQ7RUFDRSxtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGNBQWM7RUFDZCx1QkFBdUI7RUFDdkIsNEJBQTRCO0NBQzdCOztBQUVEO0VBQ0UsY0FBYztDQUNmOztBQUVEO0VBQ0Usc0JBQXNCO0VBQ3RCLGlCQUFpQjtFQUNqQixvQkFBb0I7RUFDcEIsZUFBZTtFQUNmLGdDQUF3QjtFQUF4Qix3QkFBd0I7RUFDeEIsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtDQUNsQjs7QUFFRDtFQUNFLGVBQWU7Q0FDaEI7O0FBRUQ7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGlCQUFpQjtDQUNsQjs7QUFFRDtFQUNFLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsZUFBZTtFQUNmLDZCQUFxQjtFQUFyQixxQkFBcUI7Q0FDdEI7O0FBRUQ7RUFDRSxzQkFBc0I7RUFDdEIsWUFBWTtFQUNaLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsb0JBQW9CO0VBQ3BCLGNBQWM7Q0FDZjs7QUFFRDtFQUNFLGVBQWU7Q0FDaEI7O0FBRUQ7RUFDRSxjQUFjO0NBQ2Y7O0FBRUQ7RUFDRTtJQUNFLG9CQUFvQjtJQUNwQixvQkFBb0I7R0FDckI7Q0FDRiIsImZpbGUiOiJibG9ja3MvYXJ0aWNsZS1wcmV2aWV3L2FydGljbGUtcHJldmlldy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYXJ0aWNsZS1wcmV2IHtcbiAgbWluLWhlaWdodDogMjA2cHg7XG4gIG1hcmdpbi1ib3R0b206IDQwcHg7XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiAxMjAwcHgpIHtcbiAgLmFydGljbGUtcHJldiB7XG4gICAgaGVpZ2h0OiA0NzBweDtcbiAgfVxufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjdweCkge1xuICAuYXJ0aWNsZS1wcmV2IHtcbiAgICBoZWlnaHQ6IGF1dG87XG4gIH1cbn1cblxuLmFydGljbGUtcHJldl9fcGljIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBibG9jaztcbiAgaGVpZ2h0OiAyMDBweDtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xufVxuXG4uYXJ0aWNsZS1wcmV2X19pbWcge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4uYXJ0aWNsZS1wcmV2X190aXRsZSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luLXRvcDogMjRweDtcbiAgbWFyZ2luLWJvdHRvbTogMTRweDtcbiAgY29sb3I6ICMxYTQzODg7XG4gIHRyYW5zaXRpb246IC4ycyBlYXNlLWluO1xuICBmb250LXNpemU6IDI1cHg7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG59XG5cbi5hcnRpY2xlLXByZXZfX3RpdGxlOmhvdmVyIHtcbiAgY29sb3I6ICMwMDlhZTk7XG59XG5cbi5hcnRpY2xlLXByZXZfX2Rlc2Mge1xuICBmb250LXNpemU6IDE2cHg7XG4gIGxpbmUtaGVpZ2h0OiAxOXB4O1xuICBmb250LXdlaWdodDogMzAwO1xufVxuXG4uYXJ0aWNsZS1wcmV2X19tb3JlIHtcbiAgZm9udC1zaXplOiAyNXB4O1xuICBmb250LXdlaWdodDogMzAwO1xuICBjb2xvcjogIzFhNDM4ODtcbiAgdHJhbnNpdGlvbjogLjJzIGVhc2U7XG59XG5cbi5hcnRpY2xlLXByZXZfX21vcmUgc3ZnIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB3aWR0aDogMjJweDtcbiAgaGVpZ2h0OiAxNXB4O1xuICBtYXJnaW4tbGVmdDogNXB4O1xuICBtYXJnaW4tYm90dG9tOiAtM3B4O1xuICBmaWxsOiAjMWE0Mzg4O1xufVxuXG4uYXJ0aWNsZS1wcmV2X19tb3JlOmhvdmVyIHtcbiAgY29sb3I6ICMwMDlhZTk7XG59XG5cbi5hcnRpY2xlLXByZXZfX21vcmU6aG92ZXIgc3ZnIHtcbiAgZmlsbDogIzAwOWFlOTtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgLmFydGljbGUtcHJldiB7XG4gICAgbWluLWhlaWdodDogaW5pdGlhbDtcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICB9XG59XG4iXX0= */

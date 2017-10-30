@@ -1,0 +1,16 @@
+.recovery .separate-block__content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.recovery .form-container {
+  display: block;
+}
+
+.recovery .input-wrap {
+  display: block;
+  width: 292px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlY292ZXJ5LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixxQkFBcUI7Q0FDdEI7O0FBRUQ7RUFDRSxlQUFlO0NBQ2hCOztBQUVEO0VBQ0UsZUFBZTtFQUNmLGFBQWE7RUFDYixvQkFBb0I7Q0FDckIiLCJmaWxlIjoicmVjb3ZlcnktcGFzcy9yZWNvdmVyeS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucmVjb3ZlcnkgLnNlcGFyYXRlLWJsb2NrX19jb250ZW50IHtcbiAgcGFkZGluZy10b3A6IDUwcHg7XG4gIHBhZGRpbmctYm90dG9tOiA1MHB4O1xufVxuXG4ucmVjb3ZlcnkgLmZvcm0tY29udGFpbmVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi5yZWNvdmVyeSAuaW5wdXQtd3JhcCB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMjkycHg7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG4iXX0= */
